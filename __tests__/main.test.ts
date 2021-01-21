@@ -3,6 +3,9 @@ jest.mock('@actions/github');
 jest.mock('fs');
 
 const core = require('@actions/core')
+const { GitHub, context } = require('@actions/github');
+const fs = require('fs');
+
 import run from '../src/functions'
 
 
