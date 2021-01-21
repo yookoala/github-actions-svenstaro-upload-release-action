@@ -2,6 +2,7 @@ jest.mock('@actions/core');
 jest.mock('@actions/github');
 jest.mock('fs');
 
+import core from '@actions/core'
 import run from '../src/functions'
 
 // Frankly, tests would be entirely useless unless we can mock GitHub somehow.
