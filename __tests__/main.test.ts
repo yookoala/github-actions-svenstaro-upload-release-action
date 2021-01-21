@@ -2,7 +2,7 @@ jest.mock('@actions/core');
 jest.mock('@actions/github');
 jest.mock('fs');
 
-import run as main from '../src/functions'
+import run from '../src/functions'
 
 // Frankly, tests would be entirely useless unless we can mock GitHub somehow.
 describe('Upload Release Action', () => {
